@@ -19,6 +19,7 @@ Utilizes dataset of accelerometer readings for 30 subjects performing 6 actions 
 This is all done via a single R script, run_analysis.R, which can be viewed as two sections:
 
 lines 1-40 - merging, extracting, labeling to create 1 master 
+
   (1, as above)two data sets, test and train accelerometer readings, are merged via rbind
   (4)columns are labeled, based on "features.txt" provided in original dataset
   (2)columns not containing std() or mean() readings are removed
