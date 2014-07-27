@@ -21,7 +21,9 @@ This is all done via a single R script, run_analysis.R, which can be viewed as t
 lines 1-40 - merging, extracting, labeling to create 1 master 
 
   (1, as above)two data sets, test and train accelerometer readings, are merged via rbind
+  
   (4)columns are labeled, based on "features.txt" provided in original dataset
+  
   (2)columns not containing std() or mean() readings are removed
   
   (1)joining test&train data to create a subject table
@@ -35,4 +37,4 @@ lines 1-40 - merging, extracting, labeling to create 1 master
 
 lines 41-60 - calculating an average value for each subject (30 values) and activity (6 values) to give a single tidy data table
   
-  The tidy data table consists of 180 rows (6*30), each of 2 identifying(factor) values (activity & subject) and 66       averaged values - this satisfies step 5 from above.
+  (5)The tidy data table consists of 180 rows (6*30), each of 2 identifying(factor) values (activity & subject) and 66       averaged measurement values (average of std or mean) - this satisfies step 5 from above.
